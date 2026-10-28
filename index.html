@@ -1,132 +1,168 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/favicon_io/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/favicon_io/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/favicon_io/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/favicon_io/site.webmanifest" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png" />
-    <link rel="manifest" href="/favicon_io/site.webmanifest" />
+        <title>Kyle Roshanravan - Portfolio</title>
 
-    <title>Kyle Roshanravan - Portfolio</title>
-
-    <!--
+        <!--
     - favicon
   -->
-    <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon" />
+        <link
+            rel="shortcut icon"
+            href="./assets/images/logo.ico"
+            type="image/x-icon"
+        />
 
-    <!--
+        <!--
     - custom css link
   -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
 
-    <!--
+        <!--
     - google font link
   -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
-</head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+            rel="stylesheet"
+        />
+    </head>
 
-<body>
-    <!--
+    <body>
+        <!--
     - #MAIN
   -->
 
-    <main>
-        <!--
+        <main>
+            <!--
       - #SIDEBAR
     -->
-        <div class="overlay-image"></div>
-        <aside class="sidebar" data-sidebar>
-            <div class="sidebar-info">
-                <figure class="avatar-box">
-                    <img src="./assets/images/my-avatar.png" alt="Kyle Roshanravan" width="80" />
-                </figure>
+            <div class="overlay-image"></div>
+            <aside class="sidebar" data-sidebar>
+                <div class="sidebar-info">
+                    <figure class="avatar-box">
+                        <img
+                            src="./assets/images/my-avatar.png"
+                            alt="Kyle Roshanravan"
+                            width="80"
+                        />
+                    </figure>
 
-                <div class="info-content">
-                    <h1 class="name" title="Kyle Roshanravan">
-                        Kyle Roshanravan
-                    </h1>
+                    <div class="info-content">
+                        <h1 class="name" title="Kyle Roshanravan">
+                            Kyle Roshanravan
+                        </h1>
 
-                    <p class="title">Software Engineer</p>
+                        <p class="title">Software Engineer</p>
+                    </div>
+
+                    <button class="info_more-btn" data-sidebar-btn>
+                        <span>Show Contacts</span>
+
+                        <ion-icon name="chevron-down"></ion-icon>
+                    </button>
                 </div>
 
-                <button class="info_more-btn" data-sidebar-btn>
-                    <span>Show Contacts</span>
+                <div class="sidebar-info_more">
+                    <div class="separator"></div>
 
-                    <ion-icon name="chevron-down"></ion-icon>
-                </button>
-            </div>
+                    <ul class="contacts-list">
+                        <li class="contact-item">
+                            <div class="icon-box">
+                                <ion-icon name="mail-outline"></ion-icon>
+                            </div>
 
-            <div class="sidebar-info_more">
-                <div class="separator"></div>
+                            <div class="contact-info">
+                                <p class="contact-title">Email</p>
 
-                <ul class="contacts-list">
-                    <li class="contact-item">
-                        <div class="icon-box">
-                            <ion-icon name="mail-outline"></ion-icon>
-                        </div>
+                                <a
+                                    href="mailto:klr357@drexel.edu"
+                                    class="contact-link"
+                                    >klr357@drexel.edu</a
+                                >
+                            </div>
+                        </li>
 
-                        <div class="contact-info">
-                            <p class="contact-title">Email</p>
+                        <li class="contact-item">
+                            <div class="icon-box">
+                                <ion-icon
+                                    name="phone-portrait-outline"
+                                ></ion-icon>
+                            </div>
 
-                            <a href="mailto:klr357@drexel.edu" class="contact-link">klr357@drexel.edu</a>
-                        </div>
-                    </li>
+                            <div class="contact-info">
+                                <p class="contact-title">Phone</p>
 
-                    <li class="contact-item">
-                        <div class="icon-box">
-                            <ion-icon name="phone-portrait-outline"></ion-icon>
-                        </div>
+                                <a href="tel:+12153971173" class="contact-link"
+                                    >+1 (215) 397-1173</a
+                                >
+                            </div>
+                        </li>
 
-                        <div class="contact-info">
-                            <p class="contact-title">Phone</p>
+                        <li class="contact-item">
+                            <div class="icon-box">
+                                <ion-icon name="calendar-outline"></ion-icon>
+                            </div>
 
-                            <a href="tel:+12153971173" class="contact-link">+1 (215) 397-1173</a>
-                        </div>
-                    </li>
+                            <div class="contact-info">
+                                <p class="contact-title">Years of Experience</p>
 
-                    <li class="contact-item">
-                        <div class="icon-box">
-                            <ion-icon name="calendar-outline"></ion-icon>
-                        </div>
+                                <a class="contact-link">3+</a>
+                            </div>
+                        </li>
 
-                        <div class="contact-info">
-                            <p class="contact-title">Age</p>
+                        <li class="contact-item">
+                            <div class="icon-box">
+                                <ion-icon name="location-outline"></ion-icon>
+                            </div>
 
-                            <a class="contact-link">21</a>
-                        </div>
-                    </li>
+                            <div class="contact-info">
+                                <p class="contact-title">Location</p>
 
-                    <li class="contact-item">
-                        <div class="icon-box">
-                            <ion-icon name="location-outline"></ion-icon>
-                        </div>
+                                <address>
+                                    Philadelphia, Pennsylvania, USA
+                                </address>
+                            </div>
+                        </li>
+                    </ul>
 
-                        <div class="contact-info">
-                            <p class="contact-title">Location</p>
+                    <div class="separator"></div>
 
-                            <address>
-                                Philadelphia, Pennsylvania, USA
-                            </address>
-                        </div>
-                    </li>
-                </ul>
+                    <ul class="social-list">
+                        <li class="social-item">
+                            <a
+                                href="https://www.linkedin.com/in/kyle-roshanravan/"
+                                class="social-link"
+                                target="_blank"
+                            >
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a>
+                        </li>
 
-                <div class="separator"></div>
-
-                <ul class="social-list">
-                    <li class="social-item">
-                        <a href="https://www.linkedin.com/in/kyle-roshanravan/" class="social-link" target="_blank">
-                            <ion-icon name="logo-linkedin"></ion-icon>
-                        </a>
-                    </li>
-
-                    <!--                         <li class="social-item">
+                        <!--                         <li class="social-item">
                             <a href="#" class="social-link">
                                 <ion-icon name="logo-twitter"></ion-icon>
                             </a>
@@ -137,260 +173,292 @@
                                 <ion-icon name="logo-instagram"></ion-icon>
                             </a>
                         </li> -->
-                </ul>
-            </div>
-        </aside>
+                    </ul>
+                </div>
+            </aside>
 
-        <!--
+            <!--
       - #main-content
     -->
 
-        <div class="main-content">
-            <!--
+            <div class="main-content">
+                <!--
         - #NAVBAR
       -->
 
-            <nav class="navbar">
-                <ul class="navbar-list">
-                    <li class="navbar-item">
-                        <button class="navbar-link active" data-nav-link>
-                            About
-                        </button>
-                    </li>
+                <nav class="navbar">
+                    <ul class="navbar-list">
+                        <li class="navbar-item">
+                            <button class="navbar-link active" data-nav-link>
+                                About
+                            </button>
+                        </li>
 
-                    <li class="navbar-item">
-                        <button class="navbar-link" data-nav-link>
-                            Resume
-                        </button>
-                    </li>
+                        <li class="navbar-item">
+                            <button class="navbar-link" data-nav-link>
+                                Resume
+                            </button>
+                        </li>
 
-                    <li class="navbar-item">
-                        <button class="navbar-link" data-nav-link>
-                            Portfolio
-                        </button>
-                    </li>
+                        <li class="navbar-item">
+                            <button class="navbar-link" data-nav-link>
+                                Portfolio
+                            </button>
+                        </li>
 
-                    <!-- <li class="navbar-item">
+                        <!-- <li class="navbar-item">
                             <button class="navbar-link" data-nav-link>
                                 Blog
                             </button>
                         </li> -->
 
-                    <li class="navbar-item">
-                        <button class="navbar-link" data-nav-link>
-                            Contact
-                        </button>
-                    </li>
-                </ul>
-            </nav>
+                        <li class="navbar-item">
+                            <button class="navbar-link" data-nav-link>
+                                Contact
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
 
-            <!--
+                <!--
         - #ABOUT
       -->
 
-            <article class="about active" data-page="about">
-                <header>
-                    <h2 class="h2 article-title">About me</h2>
-                </header>
+                <article class="about active" data-page="about">
+                    <header>
+                        <h2 class="h2 article-title">About me</h2>
+                    </header>
 
-                <section class="about-text">
-                    <p>
-                        I’m a full-time Software Engineering student at
-                        Drexel University, pursuing a Bachelor of Science
-                        degree. My strongest skills are in software and web
-                        development, but I’m always eager to explore new
-                        technologies, languages, and problem-solving
-                        opportunities across the software engineering field.
-                    </p>
+                    <section class="about-text">
+                        <p>
+                            I’m a full-time Software Engineering student at
+                            Drexel University, pursuing a Bachelor of Science
+                            degree. My strongest skills are in software and web
+                            development, but I’m always eager to explore new
+                            technologies, languages, and problem-solving
+                            opportunities across the software engineering field.
+                        </p>
 
-                    <p>
-                        I’m passionate about building modern websites and
-                        applications from the ground up—combining thoughtful
-                        UI/UX design with clean, maintainable code. While I
-                        enjoy crafting intuitive front-end experiences, I’m
-                        equally dedicated to full-stack development,
-                        designing secure database structures, developing
-                        Java-based systems and APIs, and maintaining Linux
-                        environments to ensure performance and reliability.
-                    </p>
+                        <p>
+                            I’m passionate about building modern websites and
+                            applications from the ground up—combining thoughtful
+                            UI/UX design with clean, maintainable code. While I
+                            enjoy crafting intuitive front-end experiences, I’m
+                            equally dedicated to full-stack development,
+                            designing secure database structures, developing
+                            Java-based systems and APIs, and maintaining Linux
+                            environments to ensure performance and reliability.
+                        </p>
 
-                    <p>
-                        Although early in my career, I’ve contributed to a
-                        variety of impactful projects—from refactoring
-                        enterprise-level websites to developing complete
-                        platforms with custom integrations. I’m excited to
-                        keep learning, building, and bringing fresh,
-                        creative solutions to every team I work with.
-                    </p>
-                </section>
+                        <p>
+                            Although early in my career, I’ve contributed to a
+                            variety of impactful projects—from refactoring
+                            enterprise-level websites to developing complete
+                            platforms with custom integrations. I’m excited to
+                            keep learning, building, and bringing fresh,
+                            creative solutions to every team I work with.
+                        </p>
+                    </section>
 
-                <!--
+                    <!--
           - service
         -->
 
-                <section class="service">
-                    <h3 class="h3 service-title">What I'm skilled at</h3>
+                    <section class="service">
+                        <h3 class="h3 service-title">What I'm skilled at</h3>
 
-                    <ul class="service-list">
-                        <li class="service-item">
-                            <div class="service-icon-box">
-                                <img src="./assets/images/layout-dashboard.svg" alt="design icon" width="40" />
-                            </div>
+                        <ul class="service-list">
+                            <li class="service-item">
+                                <div class="service-icon-box">
+                                    <img
+                                        src="./assets/images/layout-dashboard.svg"
+                                        alt="design icon"
+                                        width="40"
+                                    />
+                                </div>
 
-                            <div class="service-content-box">
-                                <h4 class="h4 service-item-title">
-                                    Web design
-                                </h4>
+                                <div class="service-content-box">
+                                    <h4 class="h4 service-item-title">
+                                        Web design
+                                    </h4>
 
-                                <p class="service-item-text">
-                                    Creating user-focused styling across
-                                    sites, with strong emphasis on modern
-                                    design and minimalism.
-                                </p>
-                            </div>
-                        </li>
+                                    <p class="service-item-text">
+                                        Creating user-focused styling across
+                                        sites, with strong emphasis on modern
+                                        design and minimalism.
+                                    </p>
+                                </div>
+                            </li>
 
-                        <li class="service-item">
-                            <div class="service-icon-box">
-                                <img src="./assets/images/code.svg" alt="Web development icon" width="40" />
-                            </div>
+                            <li class="service-item">
+                                <div class="service-icon-box">
+                                    <img
+                                        src="./assets/images/code.svg"
+                                        alt="Web development icon"
+                                        width="40"
+                                    />
+                                </div>
 
-                            <div class="service-content-box">
-                                <h4 class="h4 service-item-title">
-                                    Web development
-                                </h4>
+                                <div class="service-content-box">
+                                    <h4 class="h4 service-item-title">
+                                        Web development
+                                    </h4>
 
-                                <p class="service-item-text">
-                                    Building responsive, high-performance
-                                    websites using best practices in coding,
-                                    accessibility, and organization.
-                                </p>
-                            </div>
-                        </li>
+                                    <p class="service-item-text">
+                                        Building responsive, high-performance
+                                        websites using best practices in coding,
+                                        accessibility, and organization.
+                                    </p>
+                                </div>
+                            </li>
 
-                        <li class="service-item">
-                            <div class="service-icon-box">
-                                <img src="./assets/images/folder-code.svg" alt="software icon" width="40" />
-                            </div>
+                            <li class="service-item">
+                                <div class="service-icon-box">
+                                    <img
+                                        src="./assets/images/folder-code.svg"
+                                        alt="software icon"
+                                        width="40"
+                                    />
+                                </div>
 
-                            <div class="service-content-box">
-                                <h4 class="h4 service-item-title">
-                                    Software Development
-                                </h4>
+                                <div class="service-content-box">
+                                    <h4 class="h4 service-item-title">
+                                        Software Development
+                                    </h4>
 
-                                <p class="service-item-text">
-                                    Developing innovative software grounded
-                                    in strong logic and functionality.
-                                </p>
-                            </div>
-                        </li>
+                                    <p class="service-item-text">
+                                        Developing innovative software grounded
+                                        in strong logic and functionality.
+                                    </p>
+                                </div>
+                            </li>
 
-                        <li class="service-item">
-                            <div class="service-icon-box">
-                                <img src="./assets/images/git-fork.svg" alt="git fork icon" width="40" />
-                            </div>
+                            <li class="service-item">
+                                <div class="service-icon-box">
+                                    <img
+                                        src="./assets/images/git-fork.svg"
+                                        alt="git fork icon"
+                                        width="40"
+                                    />
+                                </div>
 
-                            <div class="service-content-box">
-                                <h4 class="h4 service-item-title">
-                                    Collaboration
-                                </h4>
+                                <div class="service-content-box">
+                                    <h4 class="h4 service-item-title">
+                                        Collaboration
+                                    </h4>
 
-                                <p class="service-item-text">
-                                    Experienced in working and leading
-                                    within Agile teams of all sizes to
-                                    deliver projects efficiently and
-                                    effectively.
-                                </p>
-                            </div>
-                        </li>
+                                    <p class="service-item-text">
+                                        Experienced in working and leading
+                                        within Agile teams of all sizes to
+                                        deliver projects efficiently and
+                                        effectively.
+                                    </p>
+                                </div>
+                            </li>
 
-                        <li class="service-item">
-                            <div class="service-icon-box">
-                                <img src="./assets/images/paintbrush.svg" alt="paintbrush icon" width="40" />
-                            </div>
+                            <li class="service-item">
+                                <div class="service-icon-box">
+                                    <img
+                                        src="./assets/images/paintbrush.svg"
+                                        alt="paintbrush icon"
+                                        width="40"
+                                    />
+                                </div>
 
-                            <div class="service-content-box">
-                                <h4 class="h4 service-item-title">
-                                    Graphic Design
-                                </h4>
+                                <div class="service-content-box">
+                                    <h4 class="h4 service-item-title">
+                                        Graphic Design
+                                    </h4>
 
-                                <p class="service-item-text">
-                                    Producing professional visual designs
-                                    aligned with brand identity and style.
-                                    Proficient in photo and video editing
-                                    using industry-standard tools.
-                                </p>
-                            </div>
-                        </li>
+                                    <p class="service-item-text">
+                                        Producing professional visual designs
+                                        aligned with brand identity and style.
+                                        Proficient in photo and video editing
+                                        using industry-standard tools.
+                                    </p>
+                                </div>
+                            </li>
 
-                        <li class="service-item">
-                            <div class="service-icon-box">
-                                <img src="./assets/images/cog.svg" alt="cog icon" width="40" />
-                            </div>
+                            <li class="service-item">
+                                <div class="service-icon-box">
+                                    <img
+                                        src="./assets/images/cog.svg"
+                                        alt="cog icon"
+                                        width="40"
+                                    />
+                                </div>
 
-                            <div class="service-content-box">
-                                <h4 class="h4 service-item-title">
-                                    Automation & Workflow Optimization
-                                </h4>
+                                <div class="service-content-box">
+                                    <h4 class="h4 service-item-title">
+                                        Automation & Workflow Optimization
+                                    </h4>
 
-                                <p class="service-item-text">
-                                    Streamlining processes through
-                                    automation, APIs, and integrations to
-                                    improve efficiency and reduce manual
-                                    repeptitive work.
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
-                </section>
-            </article>
+                                    <p class="service-item-text">
+                                        Streamlining processes through
+                                        automation, APIs, and integrations to
+                                        improve efficiency and reduce manual
+                                        repeptitive work.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                </article>
 
-            <!--
+                <!--
         - #RESUME
       -->
 
-            <article class="resume" data-page="resume">
-                <header>
-                    <h2 class="h2 article-title">Resume</h2>
-                </header>
+                <article class="resume" data-page="resume">
+                    <header>
+                        <h2 class="h2 article-title">Resume</h2>
+                    </header>
 
-                <a href="./resume.pdf" target="_blank" class="resume-external-link-button">
-                    <p>View Physical Résumé PDF</p>
-                    <img src="./assets/images/external-link.svg" alt="external link icon" width="25" />
-                </a>
+                    <a
+                        href="./resume.pdf"
+                        target="_blank"
+                        class="resume-external-link-button"
+                    >
+                        <p>View Physical Résumé PDF</p>
+                        <img
+                            src="./assets/images/external-link.svg"
+                            alt="external link icon"
+                            width="25"
+                        />
+                    </a>
 
-                <section class="timeline">
-                    <div class="title-wrapper">
-                        <div class="icon-box">
-                            <ion-icon name="book-outline"></ion-icon>
+                    <section class="timeline">
+                        <div class="title-wrapper">
+                            <div class="icon-box">
+                                <ion-icon name="book-outline"></ion-icon>
+                            </div>
+
+                            <h3 class="h3">Education</h3>
                         </div>
 
-                        <h3 class="h3">Education</h3>
-                    </div>
+                        <ol class="timeline-list">
+                            <li class="timeline-item">
+                                <h4 class="h4 timeline-item-title">
+                                    Drexel University
+                                </h4>
 
-                    <ol class="timeline-list">
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">
-                                Drexel University
-                            </h4>
+                                <span>2023 — Present</span>
 
-                            <span>2023 — Present</span>
-
-                            <p class="timeline-text">
-                                I began my studies at Drexel University’s
-                                College of Computing and Informatics in Fall
-                                2023 as a Computer Science major before
-                                transitioning to Software Engineering to
-                                focus on software design, architecture, and
-                                hands-on development. Since then, I’ve
-                                gained experience in object-oriented
-                                programming, system design, and Agile
-                                development, applying these skills
-                                throughout passion projects, and
-                                professional opportunities I'm involved in.
-                            </p>
-                        </li>
-                        <!-- 
+                                <p class="timeline-text">
+                                    I began my studies at Drexel University’s
+                                    College of Computing and Informatics in Fall
+                                    2023 as a Computer Science major before
+                                    transitioning to Software Engineering to
+                                    focus on software design, architecture, and
+                                    hands-on development. Since then, I’ve
+                                    gained experience in object-oriented
+                                    programming, system design, and Agile
+                                    development, applying these skills
+                                    throughout passion projects, and
+                                    professional opportunities I'm involved in.
+                                </p>
+                            </li>
+                            <!-- 
                             <li class="timeline-item">
                                 <h4 class="h4 timeline-item-title">
                                     Academy at Palumbo
@@ -409,76 +477,89 @@
                                     self-made projects.
                                 </p>
                             </li> -->
-                    </ol>
-                </section>
+                        </ol>
+                    </section>
 
-                <section class="timeline">
-                    <div class="title-wrapper">
-                        <div class="icon-box">
-                            <ion-icon name="briefcase-outline"></ion-icon>
+                    <section class="timeline">
+                        <div class="title-wrapper">
+                            <div class="icon-box">
+                                <ion-icon name="briefcase-outline"></ion-icon>
+                            </div>
+
+                            <h3 class="h3">Experience</h3>
                         </div>
 
-                        <h3 class="h3">Experience</h3>
-                    </div>
+                        <ol class="timeline-list">
+                            <li class="timeline-item">
+                                <h4 class="h4 timeline-item-title">
+                                    Susquehanna International Group — Software
+                                    Developer
+                                </h4>
 
-                    <ol class="timeline-list">
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">
-                                Susquehanna International Group — Software Developer
-                            </h4>
+                                <span>March 2026 — Present</span>
 
-                            <span>March 2026 — Present</span>
+                                <p class="timeline-text">
+                                    Developed and maintained 15+ Accounting and
+                                    Finance applications as part of
+                                    Susquehanna's Accounting DevOps team. Built
+                                    two internal applications from the ground ip
+                                    using C#/.NET, leveraging AI-assisted
+                                    development to accelerate implementation and
+                                    understanding of new codebases. Managed
+                                    application deployments, maintenance,
+                                    bug-fixes, and updates. Migrated multiple
+                                    applications across our in-house servers,
+                                    managed our SQL databases, and developed
+                                    CI/CD pipelines to streamline automatic
+                                    build and deployment workflows.
+                                </p>
+                            </li>
 
-                            <p class="timeline-text">
-                                Built software solutions for Susquehanna's Accounting and Finance applications. Created
-                            </p>
-                        </li>
+                            <li class="timeline-item">
+                                <h4 class="h4 timeline-item-title">
+                                    Society of Hospital Medicine — Web Developer
+                                </h4>
 
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">
-                                Society of Hospital Medicine — Web Developer
-                            </h4>
+                                <span>March 2025 — September 2025</span>
 
-                            <span>March 2025 — September 2025</span>
+                                <p class="timeline-text">
+                                    Collaborated across departments in an Agile
+                                    environment to handle web update tickets and
+                                    develop projects of varying sizes. Built and
+                                    refactored websites using PHP, WordPress,
+                                    and EpiServer, including remaking over 800
+                                    pages behind the scenes—saving the company
+                                    hundreds of thousands of dollars. Designed
+                                    and implemented custom WordPress
+                                    functionality, automated workflows with
+                                    Power Automate and APIs, and built pages
+                                    from Figma prototypes through multiple
+                                    review stages. Regularly participated in
+                                    stand-up and IT meetings while assisting
+                                    with additional IT-related tasks.
+                                </p>
+                            </li>
 
-                            <p class="timeline-text">
-                                Collaborated across departments in an Agile
-                                environment to handle web update tickets and
-                                develop projects of varying sizes. Built and
-                                refactored websites using PHP, WordPress,
-                                and EpiServer, including remaking over 800
-                                pages behind the scenes—saving the company
-                                hundreds of thousands of dollars. Designed
-                                and implemented custom WordPress
-                                functionality, automated workflows with
-                                Power Automate and APIs, and built pages
-                                from Figma prototypes through multiple
-                                review stages. Regularly participated in
-                                stand-up and IT meetings while assisting
-                                with additional IT-related tasks.
-                            </p>
-                        </li>
+                            <li class="timeline-item">
+                                <h4 class="h4 timeline-item-title">
+                                    Freelance — Full-stack Web Developer
+                                </h4>
 
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">
-                                Freelance — Full-stack Web Developer
-                            </h4>
+                                <span>June 2022 — September 2023</span>
 
-                            <span>June 2022 — September 2023</span>
-
-                            <p class="timeline-text">
-                                Educated clients on the basic concepts of
-                                programming, through freelance work.
-                                Languages taught include HTML, CSS, and
-                                JavaScript. With these skills, I helped
-                                clients create their own portfolio websites,
-                                and ensuring they understand the code they
-                                write. Some instances included setting up
-                                databases, and connecting to them via PHP
-                                and ajax.
-                            </p>
-                        </li>
-                        <!-- 
+                                <p class="timeline-text">
+                                    Educated clients on the basic concepts of
+                                    programming, through freelance work.
+                                    Languages taught include HTML, CSS, and
+                                    JavaScript. With these skills, I helped
+                                    clients create their own portfolio websites,
+                                    and ensuring they understand the code they
+                                    write. Some instances included setting up
+                                    databases, and connecting to them via PHP
+                                    and ajax.
+                                </p>
+                            </li>
+                            <!-- 
                             <li class="timeline-item">
                                 <h4 class="h4 timeline-item-title">
                                     Art director
@@ -506,419 +587,562 @@
                                     quos dolores et quas molestias exceptur.
                                 </p>
                             </li> -->
-                    </ol>
-                </section>
+                        </ol>
+                    </section>
 
-                <section class="skill">
-                    <h3 class="h3 skills-title">My skills</h3>
+                    <section class="skill">
+                        <h3 class="h3 skills-title">My skills</h3>
 
-                    <ul class="skills-list content-card">
-                        <li class="skills-item">
-                            <div class="title-wrapper">
-                                <h5 class="h5">Front-end Web Design</h5>
-                                <data value="90">90%</data>
-                            </div>
+                        <ul class="skills-list content-card">
+                            <li class="skills-item">
+                                <div class="title-wrapper">
+                                    <h5 class="h5">Front-end Web Design</h5>
+                                    <data value="90">90%</data>
+                                </div>
 
-                            <div class="skill-progress-bg">
-                                <div class="skill-progress-fill" style="width: 90%"></div>
-                            </div>
-                        </li>
+                                <div class="skill-progress-bg">
+                                    <div
+                                        class="skill-progress-fill"
+                                        style="width: 90%"
+                                    ></div>
+                                </div>
+                            </li>
 
-                        <li class="skills-item">
-                            <div class="title-wrapper">
-                                <h5 class="h5">Back-end Develpment</h5>
-                                <data value="75">75%</data>
-                            </div>
+                            <li class="skills-item">
+                                <div class="title-wrapper">
+                                    <h5 class="h5">Back-end Develpment</h5>
+                                    <data value="75">75%</data>
+                                </div>
 
-                            <div class="skill-progress-bg">
-                                <div class="skill-progress-fill" style="width: 75%"></div>
-                            </div>
-                        </li>
+                                <div class="skill-progress-bg">
+                                    <div
+                                        class="skill-progress-fill"
+                                        style="width: 75%"
+                                    ></div>
+                                </div>
+                            </li>
 
-                        <li class="skills-item">
-                            <div class="title-wrapper">
-                                <h5 class="h5">
-                                    Software Design and Development
-                                </h5>
-                                <data value="90">90%</data>
-                            </div>
+                            <li class="skills-item">
+                                <div class="title-wrapper">
+                                    <h5 class="h5">
+                                        Software Design and Development
+                                    </h5>
+                                    <data value="90">90%</data>
+                                </div>
 
-                            <div class="skill-progress-bg">
-                                <div class="skill-progress-fill" style="width: 90%"></div>
-                            </div>
-                        </li>
+                                <div class="skill-progress-bg">
+                                    <div
+                                        class="skill-progress-fill"
+                                        style="width: 90%"
+                                    ></div>
+                                </div>
+                            </li>
 
-                        <li class="skills-item">
-                            <div class="title-wrapper">
-                                <h5 class="h5">Database Management</h5>
-                                <data value="60">60%</data>
-                            </div>
+                            <li class="skills-item">
+                                <div class="title-wrapper">
+                                    <h5 class="h5">Database Management</h5>
+                                    <data value="60">60%</data>
+                                </div>
 
-                            <div class="skill-progress-bg">
-                                <div class="skill-progress-fill" style="width: 60%"></div>
-                            </div>
-                        </li>
+                                <div class="skill-progress-bg">
+                                    <div
+                                        class="skill-progress-fill"
+                                        style="width: 60%"
+                                    ></div>
+                                </div>
+                            </li>
 
-                        <li class="skills-item">
-                            <div class="title-wrapper">
-                                <h5 class="h5">Graphic Design</h5>
-                                <data value="80">80%</data>
-                            </div>
+                            <li class="skills-item">
+                                <div class="title-wrapper">
+                                    <h5 class="h5">Graphic Design</h5>
+                                    <data value="80">80%</data>
+                                </div>
 
-                            <div class="skill-progress-bg">
-                                <div class="skill-progress-fill" style="width: 80%"></div>
-                            </div>
-                        </li>
-                    </ul>
-                </section>
-            </article>
+                                <div class="skill-progress-bg">
+                                    <div
+                                        class="skill-progress-fill"
+                                        style="width: 80%"
+                                    ></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                </article>
 
-            <!--
+                <!--
         - #PORTFOLIO
       -->
 
-            <article class="portfolio" data-page="portfolio">
-                <header>
-                    <h2 class="h2 article-title">Portfolio</h2>
-                </header>
+                <article class="portfolio" data-page="portfolio">
+                    <header>
+                        <h2 class="h2 article-title">Portfolio</h2>
+                    </header>
 
-                <section class="projects">
-                    <ul class="filter-list">
-                        <li class="filter-item">
-                            <button class="active" data-filter-btn>
-                                All
-                            </button>
-                        </li>
-
-                        <li class="filter-item">
-                            <button data-filter-btn>
-                                Software development
-                            </button>
-                        </li>
-
-                        <li class="filter-item">
-                            <button data-filter-btn>Applications</button>
-                        </li>
-
-                        <li class="filter-item">
-                            <button data-filter-btn>Web development</button>
-                        </li>
-                    </ul>
-
-                    <div class="filter-select-box">
-                        <button class="filter-select" data-select>
-                            <div class="select-value" data-select-value>
-                                Select category
-                            </div>
-
-                            <div class="select-icon">
-                                <ion-icon name="chevron-down"></ion-icon>
-                            </div>
-                        </button>
-
-                        <ul class="select-list">
-                            <li class="select-item">
-                                <button data-select-item>All</button>
+                    <section class="projects">
+                        <ul class="filter-list">
+                            <li class="filter-item">
+                                <button class="active" data-filter-btn>
+                                    All
+                                </button>
                             </li>
 
-                            <li class="select-item">
-                                <button data-select-item>
+                            <li class="filter-item">
+                                <button data-filter-btn>
                                     Software development
                                 </button>
                             </li>
 
-                            <li class="select-item">
-                                <button data-select-item>
-                                    Applications
-                                </button>
+                            <li class="filter-item">
+                                <button data-filter-btn>Applications</button>
                             </li>
 
-                            <li class="select-item">
-                                <button data-select-item>
-                                    Web development
-                                </button>
+                            <li class="filter-item">
+                                <button data-filter-btn>Web development</button>
                             </li>
                         </ul>
-                    </div>
 
-                    <ul class="project-list">
-                        <li class="project-item active" data-filter-item data-category="web development">
-                            <a href="#">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div>
+                        <div class="filter-select-box">
+                            <button class="filter-select" data-select>
+                                <div class="select-value" data-select-value>
+                                    Select category
+                                </div>
 
-                                    <img src="./assets/images/projects/Project1.png" alt="Webstore Builder"
-                                        loading="lazy" />
-                                </figure>
+                                <div class="select-icon">
+                                    <ion-icon name="chevron-down"></ion-icon>
+                                </div>
+                            </button>
 
-                                <h3 class="project-title">
-                                    Webstore Builder
-                                </h3>
+                            <ul class="select-list">
+                                <li class="select-item">
+                                    <button data-select-item>All</button>
+                                </li>
 
-                                <p class="project-category">
-                                    Web development
-                                </p>
-                            </a>
-                        </li>
+                                <li class="select-item">
+                                    <button data-select-item>
+                                        Software development
+                                    </button>
+                                </li>
 
-                        <li class="project-item active" data-filter-item data-category="web development">
-                            <a href="#">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div>
+                                <li class="select-item">
+                                    <button data-select-item>
+                                        Applications
+                                    </button>
+                                </li>
 
-                                    <img src="./assets/images/projects/Project2.png" alt="UniSocial" loading="lazy" />
-                                </figure>
+                                <li class="select-item">
+                                    <button data-select-item>
+                                        Web development
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
 
-                                <h3 class="project-title">UniSocial</h3>
+                        <ul class="project-list">
+                            <li
+                                class="project-item active"
+                                data-filter-item
+                                data-category="web development"
+                            >
+                                <a href="#">
+                                    <figure class="project-img">
+                                        <div class="project-item-icon-box">
+                                            <ion-icon
+                                                name="eye-outline"
+                                            ></ion-icon>
+                                        </div>
 
-                                <p class="project-category">
-                                    Web development
-                                </p>
-                            </a>
-                        </li>
+                                        <img
+                                            src="./assets/images/projects/Project1.png"
+                                            alt="Webstore Builder"
+                                            loading="lazy"
+                                        />
+                                    </figure>
 
-                        <li class="project-item active" data-filter-item data-category="software development">
-                            <a href="#">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div>
+                                    <h3 class="project-title">
+                                        Webstore Builder
+                                    </h3>
 
-                                    <img src="./assets/images/projects/Project3.png" alt="WreckMC" loading="lazy" />
-                                </figure>
+                                    <p class="project-category">
+                                        Web development
+                                    </p>
+                                </a>
+                            </li>
 
-                                <h3 class="project-title">WreckMC</h3>
+                            <li
+                                class="project-item active"
+                                data-filter-item
+                                data-category="web development"
+                            >
+                                <a href="#">
+                                    <figure class="project-img">
+                                        <div class="project-item-icon-box">
+                                            <ion-icon
+                                                name="eye-outline"
+                                            ></ion-icon>
+                                        </div>
 
-                                <p class="project-category">
-                                    Software Development
-                                </p>
-                            </a>
-                        </li>
+                                        <img
+                                            src="./assets/images/projects/Project2.png"
+                                            alt="UniSocial"
+                                            loading="lazy"
+                                        />
+                                    </figure>
 
-                        <li class="project-item active" data-filter-item data-category="applications">
-                            <a href="#">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div>
+                                    <h3 class="project-title">UniSocial</h3>
 
-                                    <img src="./assets/images/projects/Project4.png" alt="Nike Bot" loading="lazy" />
-                                </figure>
+                                    <p class="project-category">
+                                        Web development
+                                    </p>
+                                </a>
+                            </li>
 
-                                <h3 class="project-title">Nike Bot</h3>
+                            <li
+                                class="project-item active"
+                                data-filter-item
+                                data-category="software development"
+                            >
+                                <a href="#">
+                                    <figure class="project-img">
+                                        <div class="project-item-icon-box">
+                                            <ion-icon
+                                                name="eye-outline"
+                                            ></ion-icon>
+                                        </div>
 
-                                <p class="project-category">Application</p>
-                            </a>
-                        </li>
+                                        <img
+                                            src="./assets/images/projects/Project3.png"
+                                            alt="WreckMC"
+                                            loading="lazy"
+                                        />
+                                    </figure>
 
-                        <li class="project-item active" data-filter-item data-category="software development">
-                            <a href="#">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div>
+                                    <h3 class="project-title">WreckMC</h3>
 
-                                    <img src="./assets/images/projects/Project5.png" alt="Java Banking System"
-                                        loading="lazy" />
-                                </figure>
+                                    <p class="project-category">
+                                        Software Development
+                                    </p>
+                                </a>
+                            </li>
 
-                                <h3 class="project-title">
-                                    Java Banking System
-                                </h3>
+                            <li
+                                class="project-item active"
+                                data-filter-item
+                                data-category="applications"
+                            >
+                                <a href="#">
+                                    <figure class="project-img">
+                                        <div class="project-item-icon-box">
+                                            <ion-icon
+                                                name="eye-outline"
+                                            ></ion-icon>
+                                        </div>
 
-                                <p class="project-category">
-                                    Software Development
-                                </p>
-                            </a>
-                        </li>
+                                        <img
+                                            src="./assets/images/projects/Project4.png"
+                                            alt="Nike Bot"
+                                            loading="lazy"
+                                        />
+                                    </figure>
 
-                        <li class="project-item active" data-filter-item data-category="web development">
-                            <a href="#">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div>
+                                    <h3 class="project-title">Nike Bot</h3>
 
-                                    <img src="./assets/images/projects/Project6.png" alt="SEPTA Live" loading="lazy" />
-                                </figure>
+                                    <p class="project-category">Application</p>
+                                </a>
+                            </li>
 
-                                <h3 class="project-title">SEPTA Live</h3>
+                            <li
+                                class="project-item active"
+                                data-filter-item
+                                data-category="software development"
+                            >
+                                <a href="#">
+                                    <figure class="project-img">
+                                        <div class="project-item-icon-box">
+                                            <ion-icon
+                                                name="eye-outline"
+                                            ></ion-icon>
+                                        </div>
 
-                                <p class="project-category">
-                                    Web development
-                                </p>
-                            </a>
-                        </li>
+                                        <img
+                                            src="./assets/images/projects/Project5.png"
+                                            alt="Java Banking System"
+                                            loading="lazy"
+                                        />
+                                    </figure>
 
-                        <li class="project-item active" data-filter-item data-category="web development">
-                            <a href="#">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div>
+                                    <h3 class="project-title">
+                                        Java Banking System
+                                    </h3>
 
-                                    <img src="./assets/images/projects/Project7.png" alt="Mileage Simulator"
-                                        loading="lazy" />
-                                </figure>
+                                    <p class="project-category">
+                                        Software Development
+                                    </p>
+                                </a>
+                            </li>
 
-                                <h3 class="project-title">
-                                    Mileage Simulator
-                                </h3>
+                            <li
+                                class="project-item active"
+                                data-filter-item
+                                data-category="web development"
+                            >
+                                <a href="#">
+                                    <figure class="project-img">
+                                        <div class="project-item-icon-box">
+                                            <ion-icon
+                                                name="eye-outline"
+                                            ></ion-icon>
+                                        </div>
 
-                                <p class="project-category">
-                                    Web development
-                                </p>
-                            </a>
-                        </li>
+                                        <img
+                                            src="./assets/images/projects/Project6.png"
+                                            alt="SEPTA Live"
+                                            loading="lazy"
+                                        />
+                                    </figure>
 
-                        <li class="project-item active" data-filter-item data-category="web development">
-                            <a href="#">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div>
+                                    <h3 class="project-title">SEPTA Live</h3>
 
-                                    <img src="./assets/images/projects/Project8.png" alt="EFT Market Tracker"
-                                        loading="lazy" />
-                                </figure>
+                                    <p class="project-category">
+                                        Web development
+                                    </p>
+                                </a>
+                            </li>
 
-                                <h3 class="project-title">
-                                    EFT Market Tracker
-                                </h3>
+                            <li
+                                class="project-item active"
+                                data-filter-item
+                                data-category="web development"
+                            >
+                                <a href="#">
+                                    <figure class="project-img">
+                                        <div class="project-item-icon-box">
+                                            <ion-icon
+                                                name="eye-outline"
+                                            ></ion-icon>
+                                        </div>
 
-                                <p class="project-category">
-                                    Web development
-                                </p>
-                            </a>
-                        </li>
+                                        <img
+                                            src="./assets/images/projects/Project7.png"
+                                            alt="Mileage Simulator"
+                                            loading="lazy"
+                                        />
+                                    </figure>
 
-                        <li class="project-item active" data-filter-item data-category="web development">
-                            <a href="#">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div>
+                                    <h3 class="project-title">
+                                        Mileage Simulator
+                                    </h3>
 
-                                    <img src="./assets/images/projects/Project9.png" alt="Indego Bike Tracker"
-                                        loading="lazy" />
-                                </figure>
+                                    <p class="project-category">
+                                        Web development
+                                    </p>
+                                </a>
+                            </li>
 
-                                <h3 class="project-title">
-                                    Indego Bike Tracker
-                                </h3>
+                            <li
+                                class="project-item active"
+                                data-filter-item
+                                data-category="web development"
+                            >
+                                <a href="#">
+                                    <figure class="project-img">
+                                        <div class="project-item-icon-box">
+                                            <ion-icon
+                                                name="eye-outline"
+                                            ></ion-icon>
+                                        </div>
 
-                                <p class="project-category">
-                                    Web development
-                                </p>
-                            </a>
-                        </li>
+                                        <img
+                                            src="./assets/images/projects/Project8.png"
+                                            alt="EFT Market Tracker"
+                                            loading="lazy"
+                                        />
+                                    </figure>
 
-                        <li class="project-item active" data-filter-item data-category="web development">
-                            <a href="#">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div>
+                                    <h3 class="project-title">
+                                        EFT Market Tracker
+                                    </h3>
 
-                                    <img src="./assets/images/projects/Project10.png" alt="Clicking Game"
-                                        loading="lazy" />
-                                </figure>
+                                    <p class="project-category">
+                                        Web development
+                                    </p>
+                                </a>
+                            </li>
 
-                                <h3 class="project-title">Clicking Game</h3>
+                            <li
+                                class="project-item active"
+                                data-filter-item
+                                data-category="web development"
+                            >
+                                <a href="#">
+                                    <figure class="project-img">
+                                        <div class="project-item-icon-box">
+                                            <ion-icon
+                                                name="eye-outline"
+                                            ></ion-icon>
+                                        </div>
 
-                                <p class="project-category">
-                                    Web development
-                                </p>
-                            </a>
-                        </li>
+                                        <img
+                                            src="./assets/images/projects/Project9.png"
+                                            alt="Indego Bike Tracker"
+                                            loading="lazy"
+                                        />
+                                    </figure>
 
-                        <li class="project-item active" data-filter-item data-category="web development">
-                            <a href="#">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div>
+                                    <h3 class="project-title">
+                                        Indego Bike Tracker
+                                    </h3>
 
-                                    <img src="./assets/images/projects/Project11.png" alt="Xfinity Smart Recommender"
-                                        loading="lazy" />
-                                </figure>
+                                    <p class="project-category">
+                                        Web development
+                                    </p>
+                                </a>
+                            </li>
 
-                                <h3 class="project-title">
-                                    Xfinity Smart Recommender (AI)
-                                </h3>
+                            <li
+                                class="project-item active"
+                                data-filter-item
+                                data-category="web development"
+                            >
+                                <a href="#">
+                                    <figure class="project-img">
+                                        <div class="project-item-icon-box">
+                                            <ion-icon
+                                                name="eye-outline"
+                                            ></ion-icon>
+                                        </div>
 
-                                <p class="project-category">
-                                    Web development
-                                </p>
-                            </a>
-                        </li>
+                                        <img
+                                            src="./assets/images/projects/Project10.png"
+                                            alt="Clicking Game"
+                                            loading="lazy"
+                                        />
+                                    </figure>
 
-                        <li class="project-item active" data-filter-item data-category="software development">
-                            <a href="#">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div>
+                                    <h3 class="project-title">Clicking Game</h3>
 
-                                    <img src="./assets/images/projects/Project12.png" alt="Java Abstract Survey System"
-                                        loading="lazy" />
-                                </figure>
+                                    <p class="project-category">
+                                        Web development
+                                    </p>
+                                </a>
+                            </li>
 
-                                <h3 class="project-title">
-                                    Java Abstract Survey System
-                                </h3>
+                            <li
+                                class="project-item active"
+                                data-filter-item
+                                data-category="web development"
+                            >
+                                <a href="#">
+                                    <figure class="project-img">
+                                        <div class="project-item-icon-box">
+                                            <ion-icon
+                                                name="eye-outline"
+                                            ></ion-icon>
+                                        </div>
 
-                                <p class="project-category">
-                                    Software Development
-                                </p>
-                            </a>
-                        </li>
+                                        <img
+                                            src="./assets/images/projects/Project11.png"
+                                            alt="Xfinity Smart Recommender"
+                                            loading="lazy"
+                                        />
+                                    </figure>
 
-                        <li class="project-item active" data-filter-item data-category="web development">
-                            <a href="#">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div>
+                                    <h3 class="project-title">
+                                        Xfinity Smart Recommender (AI)
+                                    </h3>
 
-                                    <img src="./assets/images/projects/Project13.png" alt="B&S" loading="lazy" />
-                                </figure>
+                                    <p class="project-category">
+                                        Web development
+                                    </p>
+                                </a>
+                            </li>
 
-                                <h3 class="project-title">
-                                    B&S
-                                </h3>
+                            <li
+                                class="project-item active"
+                                data-filter-item
+                                data-category="software development"
+                            >
+                                <a href="#">
+                                    <figure class="project-img">
+                                        <div class="project-item-icon-box">
+                                            <ion-icon
+                                                name="eye-outline"
+                                            ></ion-icon>
+                                        </div>
 
-                                <p class="project-category">
-                                    Web Development
-                                </p>
-                            </a>
-                        </li>
+                                        <img
+                                            src="./assets/images/projects/Project12.png"
+                                            alt="Java Abstract Survey System"
+                                            loading="lazy"
+                                        />
+                                    </figure>
 
-                        <li class="project-item active" data-filter-item data-category="software development">
-                            <a href="#">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div>
+                                    <h3 class="project-title">
+                                        Java Abstract Survey System
+                                    </h3>
 
-                                    <img src="./assets/images/projects/Project14.png" alt="PartLedger" loading="lazy" />
-                                </figure>
+                                    <p class="project-category">
+                                        Software Development
+                                    </p>
+                                </a>
+                            </li>
 
-                                <h3 class="project-title">
-                                    PartLedger
-                                </h3>
+                            <li
+                                class="project-item active"
+                                data-filter-item
+                                data-category="web development"
+                            >
+                                <a href="#">
+                                    <figure class="project-img">
+                                        <div class="project-item-icon-box">
+                                            <ion-icon
+                                                name="eye-outline"
+                                            ></ion-icon>
+                                        </div>
 
-                                <p class="project-category">
-                                    Software Development
-                                </p>
-                            </a>
-                        </li>
+                                        <img
+                                            src="./assets/images/projects/Project13.png"
+                                            alt="B&S"
+                                            loading="lazy"
+                                        />
+                                    </figure>
 
-                        <!-- <li
+                                    <h3 class="project-title">B&S</h3>
+
+                                    <p class="project-category">
+                                        Web Development
+                                    </p>
+                                </a>
+                            </li>
+
+                            <li
+                                class="project-item active"
+                                data-filter-item
+                                data-category="software development"
+                            >
+                                <a href="#">
+                                    <figure class="project-img">
+                                        <div class="project-item-icon-box">
+                                            <ion-icon
+                                                name="eye-outline"
+                                            ></ion-icon>
+                                        </div>
+
+                                        <img
+                                            src="./assets/images/projects/Project14.png"
+                                            alt="PartLedger"
+                                            loading="lazy"
+                                        />
+                                    </figure>
+
+                                    <h3 class="project-title">PartLedger</h3>
+
+                                    <p class="project-category">
+                                        Software Development
+                                    </p>
+                                </a>
+                            </li>
+
+                            <!-- <li
                                 class="project-item active"
                                 data-filter-item
                                 data-category="web design"
@@ -1025,14 +1249,14 @@
                                     </p>
                                 </a>
                             </li> -->
-                    </ul>
-                </section>
-            </article>
+                        </ul>
+                    </section>
+                </article>
 
-            <!--
+                <!--
         - #BLOG
       -->
-            <!-- 
+                <!-- 
                 <article class="blog" data-page="blog">
                     <header>
                         <h2 class="h2 article-title">Blog</h2>
@@ -1247,36 +1471,39 @@
                     </section>
                 </article> -->
 
-            <!--
+                <!--
         - #CONTACT
       -->
 
-            <article class="contact" data-page="contact">
-                <header>
-                    <h2 class="h2 article-title">Contact</h2>
-                </header>
+                <article class="contact" data-page="contact">
+                    <header>
+                        <h2 class="h2 article-title">Contact</h2>
+                    </header>
 
-                <section class="mapbox" data-mapbox>
-                    <figure>
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d195600.6265171401!2d-75.28283417182332!3d40.00264429430426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6b7d8d4b54beb%3A0x89f514d88c3e58c1!2sPhiladelphia%2C%20PA!5e0!3m2!1sen!2sus!4v1729870792092!5m2!1sen!2sus"
-                            width="400" height="300" loading="lazy"></iframe>
-                    </figure>
-                </section>
+                    <section class="mapbox" data-mapbox>
+                        <figure>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d195600.6265171401!2d-75.28283417182332!3d40.00264429430426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6b7d8d4b54beb%3A0x89f514d88c3e58c1!2sPhiladelphia%2C%20PA!5e0!3m2!1sen!2sus!4v1729870792092!5m2!1sen!2sus"
+                                width="400"
+                                height="300"
+                                loading="lazy"
+                            ></iframe>
+                        </figure>
+                    </section>
 
-                <p class="about-text">
-                    I'm able to meet and relocate anywhere in Philadelphia,
-                    PA, including surrounding areas.
-                </p>
+                    <p class="about-text">
+                        I'm able to meet and relocate anywhere in Philadelphia,
+                        PA, including surrounding areas.
+                    </p>
 
-                <h3 class="h3 form-title">Contact Me</h3>
-                <p class="about-text">
-                    I'm able to respond to inquires most efficiently through
-                    my two emails: kyleroshanravan@gmail.com or
-                    klr357@drexel.edu.
-                </p>
+                    <h3 class="h3 form-title">Contact Me</h3>
+                    <p class="about-text">
+                        I'm able to respond to inquires most efficiently through
+                        my two emails: kyleroshanravan@gmail.com or
+                        klr357@drexel.edu.
+                    </p>
 
-                <!-- <section class="contact-form">
+                    <!-- <section class="contact-form">
                         <h3 class="h3 form-title">Contact Form</h3>
 
                         <form action="#" class="form" data-form>
@@ -1319,20 +1546,25 @@
                             </button>
                         </form>
                     </section> -->
-            </article>
-        </div>
-    </main>
+                </article>
+            </div>
+        </main>
 
-    <!--
+        <!--
     - custom js link
   -->
-    <script src="./assets/js/script.js"></script>
+        <script src="./assets/js/script.js"></script>
 
-    <!--
+        <!--
     - ionicon link
   -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
-
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        ></script>
+    </body>
 </html>
